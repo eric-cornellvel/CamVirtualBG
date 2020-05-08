@@ -1,0 +1,167 @@
+
+.filter-button {
+     font-size: 18px;
+     border: 1px solid #D3643B;
+     border-radius: 5px;
+     text-align: center;
+     color: #D3643B;
+     background-color: #fff;
+     margin-bottom: 30px
+ }
+
+ .filter-button:hover {
+     font-size: 18px;
+     border: 1px solid #D3643B;
+     border-radius: 5px;
+     text-align: center;
+     color: #ffffff;
+     background-color: #D3643B
+ }
+
+ .btn-default:active .filter-button:active {
+     background-color: #D3643B;
+     color: white
+ }
+
+ .port-image {
+     width: 100%
+ }
+
+ .virtual-background {
+
+ }
+
+ /*-----------------------------------------------------------------------*/
+
+ html, body{
+     font-family: 'Lato', sans-serif;
+     height: 100%;
+     margin: 0;
+ }
+
+.container-cam{
+     padding: 2em 10%;
+     background: url("/farmer.8b8facc6.png") repeat;
+}
+
+.container-cam h3{
+     font-family: 'Merriweather', serif;
+     color: #D3643B;
+}
+
+.container-cam h5{
+     font-weight: 400;
+     color: #403B33;
+}
+
+.step-text{
+     padding: 10px;
+}
+
+/* .step1{
+     padding-left: 70px;
+     margin-right: 10px;
+     background-image: url("../imgs/bg-arrow-right-2.png");
+     background-repeat: no-repeat;
+     background-position: right top;
+} */
+
+/* .container-cam .row{
+     background: url("../imgs/bg-arrow-down-2.png") no-repeat bottom left;
+} */
+
+.btn-menu, .btn-menu:hover{
+     background-color: #403B33;
+     border: none;
+}
+
+.btn-upload{
+     color: #403B33;
+     font-size: 25px;
+     margin-left: 10px;
+     height: 36px;
+     line-height: 36px;
+     vertical-align: middle;
+}
+
+.step2{
+     margin-top: 1em;
+}
+
+.step3{
+     margin-left: 10px;
+}
+
+.btn-download{
+     padding: 30px 35px 35px 25px;
+     background-image: url("/bg-button-2.84c557f8.png");
+     background-repeat: no-repeat;
+     background-size: 100%;
+     color: #ffffff;
+}
+
+.btn-download:hover{
+     color: #403B33;
+}
+
+.btn-download.active.focus, .btn-download.active:focus, .btn-download.active:hover, 
+.btn-download:active.focus, .btn-download:active:focus, .btn-download:active:hover{
+     background-image: url("/bg-button-2.84c557f8.png");
+     background-repeat: no-repeat;
+     background-size: 100%;
+}
+
+.camera{
+     width: 640px;
+     height: 360px;
+}
+
+ .gallery{
+     height: 500px;
+     padding: 3em 10%;
+     background: #F8F2EF;
+ }
+
+ .gallery-product {
+     margin-bottom: 1em;
+     overflow: hidden;
+ }
+
+ .gallery-product img{
+     width: 100%;
+     height: auto;
+     border-radius: 5px
+ }
+
+ .gallery-list{
+     height: 300px;
+     overflow-y: scroll;
+}
+
+/* scrollbar width */
+.gallery-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* scrollbar track */
+.gallery-list::-webkit-scrollbar-track {
+  background: #EDEBE6;
+}
+
+/* scrollbar handle */
+.gallery-list::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #D3643B;
+  background-image: linear-gradient(to top, #A96B51 0%, #D3643B 100%);
+}
+
+@media (max-width: 767.98px) {
+
+     .gallery{
+          height: 1000px;
+          padding: 3em 50px;
+          background-color: #EDEBE6;
+     }
+}
+
+/*# sourceMappingURL=/style.78032849.css.map */

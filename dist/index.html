@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BodyPix - With a Webcam Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.78032849.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <!-- Load TensorFlow.js -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2"></script>-->
+    <!-- Load BodyPix -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>-->
+</head>
+
+<body>
+    <div class="container-fluid container-cam text-center">
+        <div class="row d-flex flex-wrap align-items-center">
+            <div class="step1 col text-left">
+                <h3>STEP 1:</h3>
+                <h5>Select a picture below or upload your virtual background.</h5>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn-menu" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Select category
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Abstract</a>
+                      <a class="dropdown-item" href="#">Interior</a>
+                      <a class="dropdown-item" href="#">Nature</a>
+                      <a class="dropdown-item" href="#">Public Spaces</a>
+                      <a class="dropdown-item" href="#">Workspaces</a>
+                      <a class="dropdown-item" href="#">Funny</a>
+                      <a class="dropdown-item" href="#">Others</a>
+                    </div>
+                    <input type="file" id="myFile" class="btn-upload" accept="image/x-png,image/jpeg" style="display:none">
+                    <label for="myFile">
+                        <a class="btn-upload"><i class="fas fa-cloud-upload-alt"></i></a>
+                    </label>
+                </div>
+                <h3 class="step2">STEP 2:</h3>
+                <h5>Preview your virtual background and check how it looks.</h5>
+            </div>
+
+            <div class="camera col-pixel-width-640">
+                <video id="video" playsinline="" style="display: none;"></video>
+                <canvas id="output-canvas">
+            </canvas></div>
+
+            <div class="step3 col text-left">
+                <h3>STEP 3:</h3>
+                <h5>Download the background you like and your screenshot.</h5>
+                <button id="download-link" type="button" class="btn-download btn btn-link">DOWNLOAD</button>
+            </div>
+        </div>
+    </div>
+    <div class="gallery">
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="abstract">Abstract</button>
+            <button class="btn btn-default filter-button" data-filter="interior">Interior</button>
+            <button class="btn btn-default filter-button" data-filter="nature">Nature</button>
+            <button class="btn btn-default filter-button" data-filter="publicspaces">Public Spaces</button>
+            <button class="btn btn-default filter-button" data-filter="workspaces">Workspaces</button>
+            <button class="btn btn-default filter-button" data-filter="funny">Funny</button>
+        </div>
+        <div class="row gallery-list">
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter abstract"><a class="virtual-background"> <img src="/abstract01.0718cd90.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter abstract"><a class="virtual-background"> <img src="/abstract02.da6845ca.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter abstract"><a class="virtual-background"> <img src="/abstract03.801ea367.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter abstract"><a class="virtual-background"> <img src="/abstract04.06049ee4.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter abstract"><a class="virtual-background"> <img src="/abstract05.bbd3d736.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter abstract"><a class="virtual-background"> <img src="/abstract06.3fcccbe9.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter interior"><a class="virtual-background"> <img src="/interior01.b705744b.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter interior"><a class="virtual-background"> <img src="/interior02.3bf58b65.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter interior"><a class="virtual-background"> <img src="/interior03.a5e4c6d1.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter interior"><a class="virtual-background"> <img src="/interior04.717b126f.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter interior"><a class="virtual-background"> <img src="/interior05.434e873d.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter interior"><a class="virtual-background"> <img src="/interior06.a8af7aab.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter nature"><a class="virtual-background"> <img src="/nature01.25d18ef2.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter nature"><a class="virtual-background"> <img src="/nature02.e94f1bcb.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter nature"><a class="virtual-background"> <img src="/nature03.189fb805.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter nature"><a class="virtual-background"> <img src="/nature04.271565d4.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter nature"><a class="virtual-background"> <img src="/nature05.56e6e0fa.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter nature"><a class="virtual-background"> <img src="/nature06.9e8bf921.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter publicspaces"><a class="virtual-background"> <img src="/publicspaces01.223383f3.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter publicspaces"><a class="virtual-background"> <img src="/publicspaces02.7eea4000.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter publicspaces"><a class="virtual-background"> <img src="/publicspaces03.fa266417.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter publicspaces"><a class="virtual-background"> <img src="/publicspaces04.17c6623c.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter publicspaces"><a class="virtual-background"> <img src="/publicspaces05.d34ca0de.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter publicspaces"><a class="virtual-background"> <img src="/publicspaces06.bdb4b721.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter workspaces"><a class="virtual-background"> <img src="/workspaces01.9a9edee3.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter workspaces"><a class="virtual-background"> <img src="/workspaces02.c2942db0.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter workspaces"><a class="virtual-background"> <img src="/workspaces03.ef707e99.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter workspaces"><a class="virtual-background"> <img src="/workspaces04.7a7348a8.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter workspaces"><a class="virtual-background"> <img src="/workspaces05.139b4832.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter workspaces"><a class="virtual-background"> <img src="/workspaces06.1fe23d60.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter funny"><a class="virtual-background"> <img src="/funny01.be36056d.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter funny"><a class="virtual-background"> <img src="/funny02.d83857ac.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter funny"><a class="virtual-background"> <img src="/funny03.814f4127.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter funny"><a class="virtual-background"> <img src="/funny04.c434e92f.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter funny"><a class="virtual-background"> <img src="/funny05.08222608.jpg" class="img-responsive"></a> </div>
+            <div class="gallery-product col-xl-2 col-lg-3 col-sm-4 filter funny"><a class="virtual-background"> <img src="/funny06.98f34995.jpg" class="img-responsive"></a> </div>
+        </div>
+    </div>
+
+    <script src="/demo_util.ff527207.js"></script>
+    <script src="/PrototypeV2.e31bb0bc.js"></script>
+</body>
+
+</html>
