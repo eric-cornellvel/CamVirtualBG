@@ -6,6 +6,10 @@ var currentBGSrc = virtualBGSrc;
 var blurredImage //virtual background
 var isWebcam = true;
 
+var defaultCategory = 'abstract';
+var currentCategory = "";
+var currentBGFilename = "";
+
 const state = {
     video: null,
     stream: null,
@@ -317,6 +321,7 @@ function showImage(fileReader) {
             blurredImage = renderImageToOffScreenCanvas(image, 'blurred');
         };
         image.src = canvas.toDataURL();
+        currentBGFilename = "custom";
         //document.body.appendChild(canvas);
         document.body.appendChild(image);
     });
@@ -398,11 +403,22 @@ function download(blob) {
     // uses the <a download> to download a Blob
     let a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'screenshot.jpg';
+    a.download = currentCategory + "_" + currentBGFilename +"_screenshot.jpg";
+    document.body.appendChild(a);
+    a.click();
+
+    //download the originl background
+    var canvasBG = ensureOffscreenCanvasCreated('blurred');
+    canvasBG.toBlob(downloadBG, 'image/jpeg', 0.95);
+}
+
+function downloadBG(blob) {
+    let a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = currentCategory + "_" + currentBGFilename +"_bg.jpg";
     document.body.appendChild(a);
     a.click();
 }
-
 
 $(document).ready(function () {
     navigator.getUserMedia = navigator.getUserMedia ||
@@ -417,7 +433,8 @@ $(document).ready(function () {
         //var image = $(this).children('img');
         //blurredImage = renderImageToOffScreenCanvas(image[0], 'blurred');
 
-        var imgsrc = $(this).children('img').attr('src')
+        var imgsrc = $(this).children('img').attr('src');
+        currentBGFilename = imgsrc.split("/").pop().split(".")[0];
         crop(imgsrc, 16 / 9).then(canvas => {
             var image = document.createElement("img");
             image.id = "uploadPic";
@@ -430,10 +447,13 @@ $(document).ready(function () {
 
     });
 
+    //set default category
+    $(".filter").not('.'+defaultCategory).hide('10');
+    currentCategory = defaultCategory;
 
     $(".filter-button").click(function () {
         var value = $(this).attr('data-filter');
-
+        currentCategory = value;
         if (value == "all") {
 
             $('.filter').show('1000');
@@ -450,5 +470,11 @@ $(document).ready(function () {
         $(this).removeClass("active");
     }
     $(this).addClass("active");
+
+    
+    $('#categorylist a').on('click', function(){
+        $('#selected').text($(this).text());
+        currentCategory = $(this).text().toLowerCase();
+    });
 
 });

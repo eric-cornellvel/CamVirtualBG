@@ -39,9 +39,9 @@
                 <h5>Select a picture below or upload your virtual background.</h5>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle btn-menu" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Select category
+                        <span id="selected">Select category</span><span class="caret"></span>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div id = "categorylist" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                       <a class="dropdown-item" href="#">Abstract</a>
                       <a class="dropdown-item" href="#">Interior</a>
                       <a class="dropdown-item" href="#">Nature</a>
@@ -73,7 +73,7 @@
     </div>
     <div class="gallery">
         <div align="center">
-            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <!--<button class="btn btn-default filter-button" data-filter="all">All</button>-->
             <button class="btn btn-default filter-button" data-filter="abstract">Abstract</button>
             <button class="btn btn-default filter-button" data-filter="interior">Interior</button>
             <button class="btn btn-default filter-button" data-filter="nature">Nature</button>
