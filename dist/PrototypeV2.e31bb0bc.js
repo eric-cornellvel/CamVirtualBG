@@ -28171,15 +28171,14 @@ function download(blob) {
   a.download = currentCategory + "_" + currentBGFilename + "_screenshot.jpg";
   document.body.appendChild(a);
   a.click(); //download the originl background
-
-  var canvasBG = (0, _demo_util.ensureOffscreenCanvasCreated)('blurred');
-  canvasBG.toBlob(downloadBG, 'image/jpeg', 0.95);
+  //var canvasBG = ensureOffscreenCanvasCreated('blurred');
+  //canvasBG.toBlob(downloadBG, 'image/jpeg', 0.95);
 }
 
 function downloadBG(blob) {
   let a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = currentCategory + "_" + currentBGFilename + "_bg.jpg";
+  a.download = currentBGFilename + "_bg.jpg";
   document.body.appendChild(a);
   a.click();
 }
@@ -28207,8 +28206,8 @@ $(document).ready(function () {
       image.src = canvas.toDataURL();
     });
   }); //set default category
+  //$(".filter").not('.'+defaultCategory).hide('10');
 
-  $(".filter").not('.' + defaultCategory).hide('10');
   currentCategory = defaultCategory;
   $(".filter-button").click(function () {
     var value = $(this).attr('data-filter');

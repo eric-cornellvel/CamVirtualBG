@@ -408,14 +408,14 @@ function download(blob) {
     a.click();
 
     //download the originl background
-    var canvasBG = ensureOffscreenCanvasCreated('blurred');
-    canvasBG.toBlob(downloadBG, 'image/jpeg', 0.95);
+    //var canvasBG = ensureOffscreenCanvasCreated('blurred');
+    //canvasBG.toBlob(downloadBG, 'image/jpeg', 0.95);
 }
 
 function downloadBG(blob) {
     let a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = currentCategory + "_" + currentBGFilename +"_bg.jpg";
+    a.download = currentBGFilename +"_bg.jpg";
     document.body.appendChild(a);
     a.click();
 }
@@ -448,7 +448,7 @@ $(document).ready(function () {
     });
 
     //set default category
-    $(".filter").not('.'+defaultCategory).hide('10');
+    //$(".filter").not('.'+defaultCategory).hide('10');
     currentCategory = defaultCategory;
 
     $(".filter-button").click(function () {
