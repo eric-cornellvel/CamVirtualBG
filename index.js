@@ -430,6 +430,10 @@ function downloadBG(blob) {
     a.click();
 }
 
+function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
+}
+
 $.urlParam = function (name) {
     var results = new RegExp('[\?&]' + name + '=([^&#]*)')
                       .exec(window.location.href);
@@ -474,70 +478,65 @@ $(document).ready(function () {
     for (var key in trait_videos) {
         // check if the property/key is defined in the object itself, not in parent
         if (trait_videos.hasOwnProperty(key)) {           
-            console.log(key, trait_videos[key]);
+            //console.log(key, trait_videos[key]);
         }
     }
     
     var gallery = $('#gallery-list');
-    //var category_array = ["abstract", "interior", "nature", "publicspaces", "workspaces", "funny"];
-    for (var key in abstract_images) {
-        var category_str = 'abstract'
-        if (abstract_images.hasOwnProperty(key)) {    
-            var imgsrc_str =  abstract_images[key];       
-            var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
-                    "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
-            gallery.append(div_str);
-        }
-    }
+    var category_array = ["abstract", "interior", "nature", "publicspaces", "workspaces", "funny"];
+    var keys_abstract = Object.keys(abstract_images);
+    var keys_interior = Object.keys(interior_images);
+    var keys_nature = Object.keys(nature_images);
+    var keys_publicspaces= Object.keys(publicspaces_images);
+    var keys_workspaces= Object.keys(workspaces_images);
+    var keys_funny= Object.keys(funny_images);
 
-    for (var key in interior_images) {
-        var category_str = 'interior'
-        if (interior_images.hasOwnProperty(key)) {    
-            var imgsrc_str =  interior_images[key];       
-            var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
-                    "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
-            gallery.append(div_str);
-        }
-    }
+    shuffle(keys_abstract);
+    shuffle(keys_interior);
+    shuffle(keys_nature);
+    shuffle(keys_publicspaces);
+    shuffle(keys_workspaces);
+    shuffle(keys_funny);
 
-    for (var key in nature_images) {
-        var category_str = 'nature'
-        if (nature_images.hasOwnProperty(key)) {    
-            var imgsrc_str =  nature_images[key];       
-            var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
+    console.log(keys_abstract.length);
+    for (var i = 0; i < keys_abstract.length; i++){
+        var category_str = 'abstract';
+        var imgsrc_str =  abstract_images[keys_abstract[i]];       
+        var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
                     "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
-            gallery.append(div_str);
-        }
-    }
+        gallery.append(div_str);
 
-    for (var key in publicspaces_images) {
-        var category_str = 'publicspaces'
-        if (publicspaces_images.hasOwnProperty(key)) {    
-            var imgsrc_str =  publicspaces_images[key];       
-            var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
+        var category_str = 'interior';
+        var imgsrc_str =  interior_images[keys_interior[i]];       
+        var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
                     "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
-            gallery.append(div_str);
-        }
-    }
+        gallery.append(div_str);
 
-    for (var key in workspaces_images) {
-        var category_str = 'workspaces'
-        if (workspaces_images.hasOwnProperty(key)) {    
-            var imgsrc_str =  workspaces_images[key];       
-            var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
+        var category_str = 'nature';
+        var imgsrc_str =  nature_images[keys_nature[i]];       
+        var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
                     "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
-            gallery.append(div_str);
-        }
-    }
+        gallery.append(div_str);
 
-    for (var key in funny_images) {
-        var category_str = 'funny'
-        if (funny_images.hasOwnProperty(key)) {    
-            var imgsrc_str =  funny_images[key];       
-            var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
+        var category_str = 'publicspaces';
+        var imgsrc_str =  publicspaces_images[keys_publicspaces[i]];       
+        var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
                     "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
-            gallery.append(div_str);
-        }
+        gallery.append(div_str);
+
+        var category_str = 'workspaces';
+        var imgsrc_str =  workspaces_images[keys_workspaces[i]];       
+        var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
+                    "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+        gallery.append(div_str);
+
+        var category_str = 'funny';
+        var imgsrc_str =  funny_images[keys_funny[i]];       
+        var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
+                    "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+        gallery.append(div_str);
+        
+        
     }
 
 

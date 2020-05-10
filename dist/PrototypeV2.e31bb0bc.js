@@ -27796,10 +27796,10 @@ module.exports = "/interior_11.74fdbeae.jpg";
 module.exports = "/interior_12.a9132901.jpg";
 },{}],"imgs/interior/interior_13.jpg":[function(require,module,exports) {
 module.exports = "/interior_13.a6590573.jpg";
-},{}],"imgs/interior/interior_14.jpg":[function(require,module,exports) {
-module.exports = "/interior_14.063fee98.jpg";
 },{}],"imgs/interior/interior_15.jpg":[function(require,module,exports) {
 module.exports = "/interior_15.597a45df.jpg";
+},{}],"imgs/interior/interior_14.jpg":[function(require,module,exports) {
+module.exports = "/interior_14.063fee98.jpg";
 },{}],"imgs/interior/*.jpg":[function(require,module,exports) {
 module.exports = {
   "interior_01": require("./interior_01.jpg"),
@@ -27815,35 +27815,35 @@ module.exports = {
   "interior_11": require("./interior_11.jpg"),
   "interior_12": require("./interior_12.jpg"),
   "interior_13": require("./interior_13.jpg"),
-  "interior_14": require("./interior_14.jpg"),
-  "interior_15": require("./interior_15.jpg")
+  "interior_15": require("./interior_15.jpg"),
+  "interior_14": require("./interior_14.jpg")
 };
-},{"./interior_01.jpg":"imgs/interior/interior_01.jpg","./interior_02.jpg":"imgs/interior/interior_02.jpg","./interior_03.jpg":"imgs/interior/interior_03.jpg","./interior_04.jpg":"imgs/interior/interior_04.jpg","./interior_05.jpg":"imgs/interior/interior_05.jpg","./interior_06.jpg":"imgs/interior/interior_06.jpg","./interior_07.jpg":"imgs/interior/interior_07.jpg","./interior_08.jpg":"imgs/interior/interior_08.jpg","./interior_09.jpg":"imgs/interior/interior_09.jpg","./interior_10.jpg":"imgs/interior/interior_10.jpg","./interior_11.jpg":"imgs/interior/interior_11.jpg","./interior_12.jpg":"imgs/interior/interior_12.jpg","./interior_13.jpg":"imgs/interior/interior_13.jpg","./interior_14.jpg":"imgs/interior/interior_14.jpg","./interior_15.jpg":"imgs/interior/interior_15.jpg"}],"imgs/nature/nature_01.jpg":[function(require,module,exports) {
+},{"./interior_01.jpg":"imgs/interior/interior_01.jpg","./interior_02.jpg":"imgs/interior/interior_02.jpg","./interior_03.jpg":"imgs/interior/interior_03.jpg","./interior_04.jpg":"imgs/interior/interior_04.jpg","./interior_05.jpg":"imgs/interior/interior_05.jpg","./interior_06.jpg":"imgs/interior/interior_06.jpg","./interior_07.jpg":"imgs/interior/interior_07.jpg","./interior_08.jpg":"imgs/interior/interior_08.jpg","./interior_09.jpg":"imgs/interior/interior_09.jpg","./interior_10.jpg":"imgs/interior/interior_10.jpg","./interior_11.jpg":"imgs/interior/interior_11.jpg","./interior_12.jpg":"imgs/interior/interior_12.jpg","./interior_13.jpg":"imgs/interior/interior_13.jpg","./interior_15.jpg":"imgs/interior/interior_15.jpg","./interior_14.jpg":"imgs/interior/interior_14.jpg"}],"imgs/nature/nature_01.jpg":[function(require,module,exports) {
 module.exports = "/nature_01.25f39bbb.jpg";
 },{}],"imgs/nature/nature_02.jpg":[function(require,module,exports) {
 module.exports = "/nature_02.93aa395d.jpg";
-},{}],"imgs/nature/nature_03.jpg":[function(require,module,exports) {
-module.exports = "/nature_03.ca5cd410.jpg";
 },{}],"imgs/nature/nature_04.jpg":[function(require,module,exports) {
 module.exports = "/nature_04.2c09f78c.jpg";
 },{}],"imgs/nature/nature_05.jpg":[function(require,module,exports) {
 module.exports = "/nature_05.2498a490.jpg";
 },{}],"imgs/nature/nature_06.jpg":[function(require,module,exports) {
 module.exports = "/nature_06.e77b2cb1.jpg";
-},{}],"imgs/nature/nature_07.jpg":[function(require,module,exports) {
-module.exports = "/nature_07.ef9d8244.jpg";
+},{}],"imgs/nature/nature_03.jpg":[function(require,module,exports) {
+module.exports = "/nature_03.ca5cd410.jpg";
 },{}],"imgs/nature/nature_08.jpg":[function(require,module,exports) {
 module.exports = "/nature_08.eb1c92f5.jpg";
+},{}],"imgs/nature/nature_07.jpg":[function(require,module,exports) {
+module.exports = "/nature_07.ef9d8244.jpg";
 },{}],"imgs/nature/nature_09.jpg":[function(require,module,exports) {
 module.exports = "/nature_09.a339fee6.jpg";
-},{}],"imgs/nature/nature_10.jpg":[function(require,module,exports) {
-module.exports = "/nature_10.53cc9664.jpg";
 },{}],"imgs/nature/nature_11.jpg":[function(require,module,exports) {
 module.exports = "/nature_11.7571de1a.jpg";
 },{}],"imgs/nature/nature_12.jpg":[function(require,module,exports) {
 module.exports = "/nature_12.f834b646.jpg";
 },{}],"imgs/nature/nature_13.jpg":[function(require,module,exports) {
 module.exports = "/nature_13.05473af1.jpg";
+},{}],"imgs/nature/nature_10.jpg":[function(require,module,exports) {
+module.exports = "/nature_10.53cc9664.jpg";
 },{}],"imgs/nature/nature_14.jpg":[function(require,module,exports) {
 module.exports = "/nature_14.9e00a34e.jpg";
 },{}],"imgs/nature/nature_15.jpg":[function(require,module,exports) {
@@ -27852,21 +27852,21 @@ module.exports = "/nature_15.f50f69c3.jpg";
 module.exports = {
   "nature_01": require("./nature_01.jpg"),
   "nature_02": require("./nature_02.jpg"),
-  "nature_03": require("./nature_03.jpg"),
   "nature_04": require("./nature_04.jpg"),
   "nature_05": require("./nature_05.jpg"),
   "nature_06": require("./nature_06.jpg"),
-  "nature_07": require("./nature_07.jpg"),
+  "nature_03": require("./nature_03.jpg"),
   "nature_08": require("./nature_08.jpg"),
+  "nature_07": require("./nature_07.jpg"),
   "nature_09": require("./nature_09.jpg"),
-  "nature_10": require("./nature_10.jpg"),
   "nature_11": require("./nature_11.jpg"),
   "nature_12": require("./nature_12.jpg"),
   "nature_13": require("./nature_13.jpg"),
+  "nature_10": require("./nature_10.jpg"),
   "nature_14": require("./nature_14.jpg"),
   "nature_15": require("./nature_15.jpg")
 };
-},{"./nature_01.jpg":"imgs/nature/nature_01.jpg","./nature_02.jpg":"imgs/nature/nature_02.jpg","./nature_03.jpg":"imgs/nature/nature_03.jpg","./nature_04.jpg":"imgs/nature/nature_04.jpg","./nature_05.jpg":"imgs/nature/nature_05.jpg","./nature_06.jpg":"imgs/nature/nature_06.jpg","./nature_07.jpg":"imgs/nature/nature_07.jpg","./nature_08.jpg":"imgs/nature/nature_08.jpg","./nature_09.jpg":"imgs/nature/nature_09.jpg","./nature_10.jpg":"imgs/nature/nature_10.jpg","./nature_11.jpg":"imgs/nature/nature_11.jpg","./nature_12.jpg":"imgs/nature/nature_12.jpg","./nature_13.jpg":"imgs/nature/nature_13.jpg","./nature_14.jpg":"imgs/nature/nature_14.jpg","./nature_15.jpg":"imgs/nature/nature_15.jpg"}],"imgs/publicspaces/publicspaces_01.jpg":[function(require,module,exports) {
+},{"./nature_01.jpg":"imgs/nature/nature_01.jpg","./nature_02.jpg":"imgs/nature/nature_02.jpg","./nature_04.jpg":"imgs/nature/nature_04.jpg","./nature_05.jpg":"imgs/nature/nature_05.jpg","./nature_06.jpg":"imgs/nature/nature_06.jpg","./nature_03.jpg":"imgs/nature/nature_03.jpg","./nature_08.jpg":"imgs/nature/nature_08.jpg","./nature_07.jpg":"imgs/nature/nature_07.jpg","./nature_09.jpg":"imgs/nature/nature_09.jpg","./nature_11.jpg":"imgs/nature/nature_11.jpg","./nature_12.jpg":"imgs/nature/nature_12.jpg","./nature_13.jpg":"imgs/nature/nature_13.jpg","./nature_10.jpg":"imgs/nature/nature_10.jpg","./nature_14.jpg":"imgs/nature/nature_14.jpg","./nature_15.jpg":"imgs/nature/nature_15.jpg"}],"imgs/publicspaces/publicspaces_01.jpg":[function(require,module,exports) {
 module.exports = "/publicspaces_01.7006b00d.jpg";
 },{}],"imgs/publicspaces/publicspaces_02.jpg":[function(require,module,exports) {
 module.exports = "/publicspaces_02.d95deb74.jpg";
@@ -28504,6 +28504,10 @@ function downloadBG(blob) {
   a.click();
 }
 
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+
 $.urlParam = function (name) {
   var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
 
@@ -28543,71 +28547,51 @@ $(document).ready(function () {
 
   for (var key in _7.default) {
     // check if the property/key is defined in the object itself, not in parent
-    if (_7.default.hasOwnProperty(key)) {
-      console.log(key, _7.default[key]);
+    if (_7.default.hasOwnProperty(key)) {//console.log(key, trait_videos[key]);
     }
   }
 
-  var gallery = $('#gallery-list'); //var category_array = ["abstract", "interior", "nature", "publicspaces", "workspaces", "funny"];
+  var gallery = $('#gallery-list');
+  var category_array = ["abstract", "interior", "nature", "publicspaces", "workspaces", "funny"];
+  var keys_abstract = Object.keys(_.default);
+  var keys_interior = Object.keys(_2.default);
+  var keys_nature = Object.keys(_3.default);
+  var keys_publicspaces = Object.keys(_4.default);
+  var keys_workspaces = Object.keys(_5.default);
+  var keys_funny = Object.keys(_6.default);
+  shuffle(keys_abstract);
+  shuffle(keys_interior);
+  shuffle(keys_nature);
+  shuffle(keys_publicspaces);
+  shuffle(keys_workspaces);
+  shuffle(keys_funny);
+  console.log(keys_abstract.length);
 
-  for (var key in _.default) {
+  for (var i = 0; i < keys_abstract.length; i++) {
     var category_str = 'abstract';
-
-    if (_.default.hasOwnProperty(key)) {
-      var imgsrc_str = _.default[key];
-      var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
-      gallery.append(div_str);
-    }
-  }
-
-  for (var key in _2.default) {
+    var imgsrc_str = _.default[keys_abstract[i]];
+    var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+    gallery.append(div_str);
     var category_str = 'interior';
-
-    if (_2.default.hasOwnProperty(key)) {
-      var imgsrc_str = _2.default[key];
-      var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
-      gallery.append(div_str);
-    }
-  }
-
-  for (var key in _3.default) {
+    var imgsrc_str = _2.default[keys_interior[i]];
+    var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+    gallery.append(div_str);
     var category_str = 'nature';
-
-    if (_3.default.hasOwnProperty(key)) {
-      var imgsrc_str = _3.default[key];
-      var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
-      gallery.append(div_str);
-    }
-  }
-
-  for (var key in _4.default) {
+    var imgsrc_str = _3.default[keys_nature[i]];
+    var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+    gallery.append(div_str);
     var category_str = 'publicspaces';
-
-    if (_4.default.hasOwnProperty(key)) {
-      var imgsrc_str = _4.default[key];
-      var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
-      gallery.append(div_str);
-    }
-  }
-
-  for (var key in _5.default) {
+    var imgsrc_str = _4.default[keys_publicspaces[i]];
+    var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+    gallery.append(div_str);
     var category_str = 'workspaces';
-
-    if (_5.default.hasOwnProperty(key)) {
-      var imgsrc_str = _5.default[key];
-      var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
-      gallery.append(div_str);
-    }
-  }
-
-  for (var key in _6.default) {
+    var imgsrc_str = _5.default[keys_workspaces[i]];
+    var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+    gallery.append(div_str);
     var category_str = 'funny';
-
-    if (_6.default.hasOwnProperty(key)) {
-      var imgsrc_str = _6.default[key];
-      var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
-      gallery.append(div_str);
-    }
+    var imgsrc_str = _6.default[keys_funny[i]];
+    var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+    gallery.append(div_str);
   } // kick off the demo
 
 
