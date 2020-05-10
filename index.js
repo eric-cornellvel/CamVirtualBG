@@ -1,7 +1,17 @@
 import * as bodyPix from '@tensorflow-models/body-pix';
 import { getInputSize, ensureOffscreenCanvasCreated, drawAndBlurImageOnOffScreenCanvas, renderImageToOffScreenCanvas, renderImageDataToOffScreenCanvas, drawWithCompositing } from './demo_util';
 
-import virtualBGSrc from '/imgs/sample.jpg'
+import virtualBGSrc from '/imgs/sample.jpg';
+import videoPath1 from '/imgs/video_test.mp4';
+import blackBG from '/imgs/black.jpg';
+import abstract_images from './imgs/abstract/*.jpg';
+import interior_images from './imgs/interior/*.jpg';
+import nature_images from './imgs/nature/*.jpg';
+import publicspaces_images from './imgs/publicspaces/*.jpg';
+import workspaces_images from './imgs/workspaces/*.jpg';
+import funny_images from './imgs/funny/*.jpg';
+import trait_videos from './imgs/videos/*.mp4';
+
 var currentBGSrc = virtualBGSrc;
 var blurredImage //virtual background
 var isWebcam = true;
@@ -254,7 +264,7 @@ async function loadVideo() {
             const videoElement = document.getElementById('video');
             state.video = videoElement;
             console.log("test: "+ videoElement.videoWidth + "," + videoElement.videoHeight);
-            state.video.play();
+            //state.video.play();
         }
     } catch (e) {
         //let info = document.getElementById('info');
@@ -420,9 +430,127 @@ function downloadBG(blob) {
     a.click();
 }
 
+$.urlParam = function (name) {
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)')
+                      .exec(window.location.href);
+    if (results == null) {
+         return 0;
+    }
+    return results[1] || 0;
+}
+
 $(document).ready(function () {
-    navigator.getUserMedia = navigator.getUserMedia ||
+    
+    var mode = $.urlParam('mode');
+    var vid = $.urlParam('vid');
+    //"Nv0-x4K9YFI_004" -lowE
+    //"OgPC4wnLJR0_001" = lowA
+    //"IQdz0Pd-L2Y_004" = lowC
+    //"lnawWqnGpMc_005" = highN
+    //4bDOetaLvZs_001 = lowO
+    if(mode == 'video'){
+        isWebcam = false;
+        currentBGSrc = blackBG;
+        /*
+        var videoElement = document.getElementById("video");
+        videoElement.src = videoPath1;
+        videoElement.muted = true;
+        videoElement.load();
+        videoElement.play();
+        */
+        //vid = "lnawWqnGpMc_005";
+        var videoElement = $("#video");
+        videoElement.attr('width', 640);
+        videoElement.attr('height', 360);     
+        videoElement.attr('loop', true);
+        //videoElement.attr('muted', true);
+        //videoElement.attr('src', videoPath1);
+        videoElement.attr('src', trait_videos[vid]);
+        videoElement.get(0).load();
+        videoElement.on("loadeddata", function() {
+            videoElement.get(0).play();
+        });     
+        
+    }else{
+        isWebcam = true;
+        navigator.getUserMedia = navigator.getUserMedia ||
         navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+    }
+    
+    //add bg images
+    
+    //testing
+    
+    for (var key in trait_videos) {
+        // check if the property/key is defined in the object itself, not in parent
+        if (trait_videos.hasOwnProperty(key)) {           
+            console.log(key, trait_videos[key]);
+        }
+    }
+    
+    var gallery = $('#gallery-list');
+    //var category_array = ["abstract", "interior", "nature", "publicspaces", "workspaces", "funny"];
+    for (var key in abstract_images) {
+        var category_str = 'abstract'
+        if (abstract_images.hasOwnProperty(key)) {    
+            var imgsrc_str =  abstract_images[key];       
+            var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
+                    "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+            gallery.append(div_str);
+        }
+    }
+
+    for (var key in interior_images) {
+        var category_str = 'interior'
+        if (interior_images.hasOwnProperty(key)) {    
+            var imgsrc_str =  interior_images[key];       
+            var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
+                    "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+            gallery.append(div_str);
+        }
+    }
+
+    for (var key in nature_images) {
+        var category_str = 'nature'
+        if (nature_images.hasOwnProperty(key)) {    
+            var imgsrc_str =  nature_images[key];       
+            var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
+                    "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+            gallery.append(div_str);
+        }
+    }
+
+    for (var key in publicspaces_images) {
+        var category_str = 'publicspaces'
+        if (publicspaces_images.hasOwnProperty(key)) {    
+            var imgsrc_str =  publicspaces_images[key];       
+            var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
+                    "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+            gallery.append(div_str);
+        }
+    }
+
+    for (var key in workspaces_images) {
+        var category_str = 'workspaces'
+        if (workspaces_images.hasOwnProperty(key)) {    
+            var imgsrc_str =  workspaces_images[key];       
+            var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
+                    "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+            gallery.append(div_str);
+        }
+    }
+
+    for (var key in funny_images) {
+        var category_str = 'funny'
+        if (funny_images.hasOwnProperty(key)) {    
+            var imgsrc_str =  funny_images[key];       
+            var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter "+ category_str+ "\"><a class=\"virtual-background\" >" + 
+                    "<img src=\""+ imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+            gallery.append(div_str);
+        }
+    }
+
+
     // kick off the demo
     bindPage();
 

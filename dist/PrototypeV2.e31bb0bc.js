@@ -27718,7 +27718,311 @@ function drawWithCompositing(ctx, image, compositOperation) {
 }
 },{}],"imgs/sample.jpg":[function(require,module,exports) {
 module.exports = "/sample.859848a0.jpg";
-},{}],"index.js":[function(require,module,exports) {
+},{}],"imgs/video_test.mp4":[function(require,module,exports) {
+module.exports = "/video_test.85411a56.mp4";
+},{}],"imgs/black.jpg":[function(require,module,exports) {
+module.exports = "/black.255f8add.jpg";
+},{}],"imgs/abstract/abstract_01.jpg":[function(require,module,exports) {
+module.exports = "/abstract_01.b446c36d.jpg";
+},{}],"imgs/abstract/abstract_02.jpg":[function(require,module,exports) {
+module.exports = "/abstract_02.113c0b15.jpg";
+},{}],"imgs/abstract/abstract_03.jpg":[function(require,module,exports) {
+module.exports = "/abstract_03.a21b7188.jpg";
+},{}],"imgs/abstract/abstract_04.jpg":[function(require,module,exports) {
+module.exports = "/abstract_04.c90044e5.jpg";
+},{}],"imgs/abstract/abstract_05.jpg":[function(require,module,exports) {
+module.exports = "/abstract_05.21dd2ae6.jpg";
+},{}],"imgs/abstract/abstract_06.jpg":[function(require,module,exports) {
+module.exports = "/abstract_06.8d91d250.jpg";
+},{}],"imgs/abstract/abstract_07.jpg":[function(require,module,exports) {
+module.exports = "/abstract_07.277acd12.jpg";
+},{}],"imgs/abstract/abstract_08.jpg":[function(require,module,exports) {
+module.exports = "/abstract_08.29dcc3f7.jpg";
+},{}],"imgs/abstract/abstract_09.jpg":[function(require,module,exports) {
+module.exports = "/abstract_09.438199b6.jpg";
+},{}],"imgs/abstract/abstract_10.jpg":[function(require,module,exports) {
+module.exports = "/abstract_10.56879430.jpg";
+},{}],"imgs/abstract/abstract_11.jpg":[function(require,module,exports) {
+module.exports = "/abstract_11.2b2438b1.jpg";
+},{}],"imgs/abstract/abstract_12.jpg":[function(require,module,exports) {
+module.exports = "/abstract_12.7a436ec0.jpg";
+},{}],"imgs/abstract/abstract_13.jpg":[function(require,module,exports) {
+module.exports = "/abstract_13.47b07596.jpg";
+},{}],"imgs/abstract/abstract_14.jpg":[function(require,module,exports) {
+module.exports = "/abstract_14.be8383b3.jpg";
+},{}],"imgs/abstract/abstract_15.jpg":[function(require,module,exports) {
+module.exports = "/abstract_15.510f2c53.jpg";
+},{}],"imgs/abstract/*.jpg":[function(require,module,exports) {
+module.exports = {
+  "abstract_01": require("./abstract_01.jpg"),
+  "abstract_02": require("./abstract_02.jpg"),
+  "abstract_03": require("./abstract_03.jpg"),
+  "abstract_04": require("./abstract_04.jpg"),
+  "abstract_05": require("./abstract_05.jpg"),
+  "abstract_06": require("./abstract_06.jpg"),
+  "abstract_07": require("./abstract_07.jpg"),
+  "abstract_08": require("./abstract_08.jpg"),
+  "abstract_09": require("./abstract_09.jpg"),
+  "abstract_10": require("./abstract_10.jpg"),
+  "abstract_11": require("./abstract_11.jpg"),
+  "abstract_12": require("./abstract_12.jpg"),
+  "abstract_13": require("./abstract_13.jpg"),
+  "abstract_14": require("./abstract_14.jpg"),
+  "abstract_15": require("./abstract_15.jpg")
+};
+},{"./abstract_01.jpg":"imgs/abstract/abstract_01.jpg","./abstract_02.jpg":"imgs/abstract/abstract_02.jpg","./abstract_03.jpg":"imgs/abstract/abstract_03.jpg","./abstract_04.jpg":"imgs/abstract/abstract_04.jpg","./abstract_05.jpg":"imgs/abstract/abstract_05.jpg","./abstract_06.jpg":"imgs/abstract/abstract_06.jpg","./abstract_07.jpg":"imgs/abstract/abstract_07.jpg","./abstract_08.jpg":"imgs/abstract/abstract_08.jpg","./abstract_09.jpg":"imgs/abstract/abstract_09.jpg","./abstract_10.jpg":"imgs/abstract/abstract_10.jpg","./abstract_11.jpg":"imgs/abstract/abstract_11.jpg","./abstract_12.jpg":"imgs/abstract/abstract_12.jpg","./abstract_13.jpg":"imgs/abstract/abstract_13.jpg","./abstract_14.jpg":"imgs/abstract/abstract_14.jpg","./abstract_15.jpg":"imgs/abstract/abstract_15.jpg"}],"imgs/interior/interior_01.jpg":[function(require,module,exports) {
+module.exports = "/interior_01.697f26c2.jpg";
+},{}],"imgs/interior/interior_02.jpg":[function(require,module,exports) {
+module.exports = "/interior_02.c3185d72.jpg";
+},{}],"imgs/interior/interior_03.jpg":[function(require,module,exports) {
+module.exports = "/interior_03.4a84c8f2.jpg";
+},{}],"imgs/interior/interior_04.jpg":[function(require,module,exports) {
+module.exports = "/interior_04.abf0a06e.jpg";
+},{}],"imgs/interior/interior_05.jpg":[function(require,module,exports) {
+module.exports = "/interior_05.d58f36fb.jpg";
+},{}],"imgs/interior/interior_06.jpg":[function(require,module,exports) {
+module.exports = "/interior_06.7c5cf815.jpg";
+},{}],"imgs/interior/interior_07.jpg":[function(require,module,exports) {
+module.exports = "/interior_07.e3f46e7c.jpg";
+},{}],"imgs/interior/interior_08.jpg":[function(require,module,exports) {
+module.exports = "/interior_08.52dc0028.jpg";
+},{}],"imgs/interior/interior_09.jpg":[function(require,module,exports) {
+module.exports = "/interior_09.5d06cd0b.jpg";
+},{}],"imgs/interior/interior_10.jpg":[function(require,module,exports) {
+module.exports = "/interior_10.3aebe011.jpg";
+},{}],"imgs/interior/interior_11.jpg":[function(require,module,exports) {
+module.exports = "/interior_11.74fdbeae.jpg";
+},{}],"imgs/interior/interior_12.jpg":[function(require,module,exports) {
+module.exports = "/interior_12.a9132901.jpg";
+},{}],"imgs/interior/interior_13.jpg":[function(require,module,exports) {
+module.exports = "/interior_13.a6590573.jpg";
+},{}],"imgs/interior/interior_14.jpg":[function(require,module,exports) {
+module.exports = "/interior_14.063fee98.jpg";
+},{}],"imgs/interior/interior_15.jpg":[function(require,module,exports) {
+module.exports = "/interior_15.597a45df.jpg";
+},{}],"imgs/interior/*.jpg":[function(require,module,exports) {
+module.exports = {
+  "interior_01": require("./interior_01.jpg"),
+  "interior_02": require("./interior_02.jpg"),
+  "interior_03": require("./interior_03.jpg"),
+  "interior_04": require("./interior_04.jpg"),
+  "interior_05": require("./interior_05.jpg"),
+  "interior_06": require("./interior_06.jpg"),
+  "interior_07": require("./interior_07.jpg"),
+  "interior_08": require("./interior_08.jpg"),
+  "interior_09": require("./interior_09.jpg"),
+  "interior_10": require("./interior_10.jpg"),
+  "interior_11": require("./interior_11.jpg"),
+  "interior_12": require("./interior_12.jpg"),
+  "interior_13": require("./interior_13.jpg"),
+  "interior_14": require("./interior_14.jpg"),
+  "interior_15": require("./interior_15.jpg")
+};
+},{"./interior_01.jpg":"imgs/interior/interior_01.jpg","./interior_02.jpg":"imgs/interior/interior_02.jpg","./interior_03.jpg":"imgs/interior/interior_03.jpg","./interior_04.jpg":"imgs/interior/interior_04.jpg","./interior_05.jpg":"imgs/interior/interior_05.jpg","./interior_06.jpg":"imgs/interior/interior_06.jpg","./interior_07.jpg":"imgs/interior/interior_07.jpg","./interior_08.jpg":"imgs/interior/interior_08.jpg","./interior_09.jpg":"imgs/interior/interior_09.jpg","./interior_10.jpg":"imgs/interior/interior_10.jpg","./interior_11.jpg":"imgs/interior/interior_11.jpg","./interior_12.jpg":"imgs/interior/interior_12.jpg","./interior_13.jpg":"imgs/interior/interior_13.jpg","./interior_14.jpg":"imgs/interior/interior_14.jpg","./interior_15.jpg":"imgs/interior/interior_15.jpg"}],"imgs/nature/nature_01.jpg":[function(require,module,exports) {
+module.exports = "/nature_01.25f39bbb.jpg";
+},{}],"imgs/nature/nature_02.jpg":[function(require,module,exports) {
+module.exports = "/nature_02.93aa395d.jpg";
+},{}],"imgs/nature/nature_03.jpg":[function(require,module,exports) {
+module.exports = "/nature_03.ca5cd410.jpg";
+},{}],"imgs/nature/nature_04.jpg":[function(require,module,exports) {
+module.exports = "/nature_04.2c09f78c.jpg";
+},{}],"imgs/nature/nature_05.jpg":[function(require,module,exports) {
+module.exports = "/nature_05.2498a490.jpg";
+},{}],"imgs/nature/nature_06.jpg":[function(require,module,exports) {
+module.exports = "/nature_06.e77b2cb1.jpg";
+},{}],"imgs/nature/nature_07.jpg":[function(require,module,exports) {
+module.exports = "/nature_07.ef9d8244.jpg";
+},{}],"imgs/nature/nature_08.jpg":[function(require,module,exports) {
+module.exports = "/nature_08.eb1c92f5.jpg";
+},{}],"imgs/nature/nature_09.jpg":[function(require,module,exports) {
+module.exports = "/nature_09.a339fee6.jpg";
+},{}],"imgs/nature/nature_10.jpg":[function(require,module,exports) {
+module.exports = "/nature_10.53cc9664.jpg";
+},{}],"imgs/nature/nature_11.jpg":[function(require,module,exports) {
+module.exports = "/nature_11.7571de1a.jpg";
+},{}],"imgs/nature/nature_12.jpg":[function(require,module,exports) {
+module.exports = "/nature_12.f834b646.jpg";
+},{}],"imgs/nature/nature_13.jpg":[function(require,module,exports) {
+module.exports = "/nature_13.05473af1.jpg";
+},{}],"imgs/nature/nature_14.jpg":[function(require,module,exports) {
+module.exports = "/nature_14.9e00a34e.jpg";
+},{}],"imgs/nature/nature_15.jpg":[function(require,module,exports) {
+module.exports = "/nature_15.f50f69c3.jpg";
+},{}],"imgs/nature/*.jpg":[function(require,module,exports) {
+module.exports = {
+  "nature_01": require("./nature_01.jpg"),
+  "nature_02": require("./nature_02.jpg"),
+  "nature_03": require("./nature_03.jpg"),
+  "nature_04": require("./nature_04.jpg"),
+  "nature_05": require("./nature_05.jpg"),
+  "nature_06": require("./nature_06.jpg"),
+  "nature_07": require("./nature_07.jpg"),
+  "nature_08": require("./nature_08.jpg"),
+  "nature_09": require("./nature_09.jpg"),
+  "nature_10": require("./nature_10.jpg"),
+  "nature_11": require("./nature_11.jpg"),
+  "nature_12": require("./nature_12.jpg"),
+  "nature_13": require("./nature_13.jpg"),
+  "nature_14": require("./nature_14.jpg"),
+  "nature_15": require("./nature_15.jpg")
+};
+},{"./nature_01.jpg":"imgs/nature/nature_01.jpg","./nature_02.jpg":"imgs/nature/nature_02.jpg","./nature_03.jpg":"imgs/nature/nature_03.jpg","./nature_04.jpg":"imgs/nature/nature_04.jpg","./nature_05.jpg":"imgs/nature/nature_05.jpg","./nature_06.jpg":"imgs/nature/nature_06.jpg","./nature_07.jpg":"imgs/nature/nature_07.jpg","./nature_08.jpg":"imgs/nature/nature_08.jpg","./nature_09.jpg":"imgs/nature/nature_09.jpg","./nature_10.jpg":"imgs/nature/nature_10.jpg","./nature_11.jpg":"imgs/nature/nature_11.jpg","./nature_12.jpg":"imgs/nature/nature_12.jpg","./nature_13.jpg":"imgs/nature/nature_13.jpg","./nature_14.jpg":"imgs/nature/nature_14.jpg","./nature_15.jpg":"imgs/nature/nature_15.jpg"}],"imgs/publicspaces/publicspaces_01.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_01.7006b00d.jpg";
+},{}],"imgs/publicspaces/publicspaces_02.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_02.d95deb74.jpg";
+},{}],"imgs/publicspaces/publicspaces_03.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_03.ea5ff380.jpg";
+},{}],"imgs/publicspaces/publicspaces_04.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_04.ee779a57.jpg";
+},{}],"imgs/publicspaces/publicspaces_05.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_05.4969f6fb.jpg";
+},{}],"imgs/publicspaces/publicspaces_06.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_06.0b1e921c.jpg";
+},{}],"imgs/publicspaces/publicspaces_07.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_07.aa8ada75.jpg";
+},{}],"imgs/publicspaces/publicspaces_08.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_08.f1f7c3a8.jpg";
+},{}],"imgs/publicspaces/publicspaces_09.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_09.d28b85db.jpg";
+},{}],"imgs/publicspaces/publicspaces_10.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_10.c8e0b207.jpg";
+},{}],"imgs/publicspaces/publicspaces_11.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_11.4292c03e.jpg";
+},{}],"imgs/publicspaces/publicspaces_12.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_12.99cb753b.jpg";
+},{}],"imgs/publicspaces/publicspaces_13.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_13.a58e564a.jpg";
+},{}],"imgs/publicspaces/publicspaces_14.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_14.c3dbf67e.jpg";
+},{}],"imgs/publicspaces/publicspaces_15.jpg":[function(require,module,exports) {
+module.exports = "/publicspaces_15.142d8525.jpg";
+},{}],"imgs/publicspaces/*.jpg":[function(require,module,exports) {
+module.exports = {
+  "publicspaces_01": require("./publicspaces_01.jpg"),
+  "publicspaces_02": require("./publicspaces_02.jpg"),
+  "publicspaces_03": require("./publicspaces_03.jpg"),
+  "publicspaces_04": require("./publicspaces_04.jpg"),
+  "publicspaces_05": require("./publicspaces_05.jpg"),
+  "publicspaces_06": require("./publicspaces_06.jpg"),
+  "publicspaces_07": require("./publicspaces_07.jpg"),
+  "publicspaces_08": require("./publicspaces_08.jpg"),
+  "publicspaces_09": require("./publicspaces_09.jpg"),
+  "publicspaces_10": require("./publicspaces_10.jpg"),
+  "publicspaces_11": require("./publicspaces_11.jpg"),
+  "publicspaces_12": require("./publicspaces_12.jpg"),
+  "publicspaces_13": require("./publicspaces_13.jpg"),
+  "publicspaces_14": require("./publicspaces_14.jpg"),
+  "publicspaces_15": require("./publicspaces_15.jpg")
+};
+},{"./publicspaces_01.jpg":"imgs/publicspaces/publicspaces_01.jpg","./publicspaces_02.jpg":"imgs/publicspaces/publicspaces_02.jpg","./publicspaces_03.jpg":"imgs/publicspaces/publicspaces_03.jpg","./publicspaces_04.jpg":"imgs/publicspaces/publicspaces_04.jpg","./publicspaces_05.jpg":"imgs/publicspaces/publicspaces_05.jpg","./publicspaces_06.jpg":"imgs/publicspaces/publicspaces_06.jpg","./publicspaces_07.jpg":"imgs/publicspaces/publicspaces_07.jpg","./publicspaces_08.jpg":"imgs/publicspaces/publicspaces_08.jpg","./publicspaces_09.jpg":"imgs/publicspaces/publicspaces_09.jpg","./publicspaces_10.jpg":"imgs/publicspaces/publicspaces_10.jpg","./publicspaces_11.jpg":"imgs/publicspaces/publicspaces_11.jpg","./publicspaces_12.jpg":"imgs/publicspaces/publicspaces_12.jpg","./publicspaces_13.jpg":"imgs/publicspaces/publicspaces_13.jpg","./publicspaces_14.jpg":"imgs/publicspaces/publicspaces_14.jpg","./publicspaces_15.jpg":"imgs/publicspaces/publicspaces_15.jpg"}],"imgs/workspaces/workspaces_01.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_01.d21d4f85.jpg";
+},{}],"imgs/workspaces/workspaces_02.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_02.44b45634.jpg";
+},{}],"imgs/workspaces/workspaces_03.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_03.ccf8e49c.jpg";
+},{}],"imgs/workspaces/workspaces_04.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_04.626f2d22.jpg";
+},{}],"imgs/workspaces/workspaces_05.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_05.105b1b33.jpg";
+},{}],"imgs/workspaces/workspaces_06.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_06.a54dc824.jpg";
+},{}],"imgs/workspaces/workspaces_07.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_07.705f2e0d.jpg";
+},{}],"imgs/workspaces/workspaces_08.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_08.ad349414.jpg";
+},{}],"imgs/workspaces/workspaces_09.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_09.44216f71.jpg";
+},{}],"imgs/workspaces/workspaces_10.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_10.f0dae90d.jpg";
+},{}],"imgs/workspaces/workspaces_11.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_11.a8e48aef.jpg";
+},{}],"imgs/workspaces/workspaces_12.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_12.7c820f62.jpg";
+},{}],"imgs/workspaces/workspaces_13.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_13.50d3a54c.jpg";
+},{}],"imgs/workspaces/workspaces_14.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_14.a22e2d15.jpg";
+},{}],"imgs/workspaces/workspaces_15.jpg":[function(require,module,exports) {
+module.exports = "/workspaces_15.44f911b9.jpg";
+},{}],"imgs/workspaces/*.jpg":[function(require,module,exports) {
+module.exports = {
+  "workspaces_01": require("./workspaces_01.jpg"),
+  "workspaces_02": require("./workspaces_02.jpg"),
+  "workspaces_03": require("./workspaces_03.jpg"),
+  "workspaces_04": require("./workspaces_04.jpg"),
+  "workspaces_05": require("./workspaces_05.jpg"),
+  "workspaces_06": require("./workspaces_06.jpg"),
+  "workspaces_07": require("./workspaces_07.jpg"),
+  "workspaces_08": require("./workspaces_08.jpg"),
+  "workspaces_09": require("./workspaces_09.jpg"),
+  "workspaces_10": require("./workspaces_10.jpg"),
+  "workspaces_11": require("./workspaces_11.jpg"),
+  "workspaces_12": require("./workspaces_12.jpg"),
+  "workspaces_13": require("./workspaces_13.jpg"),
+  "workspaces_14": require("./workspaces_14.jpg"),
+  "workspaces_15": require("./workspaces_15.jpg")
+};
+},{"./workspaces_01.jpg":"imgs/workspaces/workspaces_01.jpg","./workspaces_02.jpg":"imgs/workspaces/workspaces_02.jpg","./workspaces_03.jpg":"imgs/workspaces/workspaces_03.jpg","./workspaces_04.jpg":"imgs/workspaces/workspaces_04.jpg","./workspaces_05.jpg":"imgs/workspaces/workspaces_05.jpg","./workspaces_06.jpg":"imgs/workspaces/workspaces_06.jpg","./workspaces_07.jpg":"imgs/workspaces/workspaces_07.jpg","./workspaces_08.jpg":"imgs/workspaces/workspaces_08.jpg","./workspaces_09.jpg":"imgs/workspaces/workspaces_09.jpg","./workspaces_10.jpg":"imgs/workspaces/workspaces_10.jpg","./workspaces_11.jpg":"imgs/workspaces/workspaces_11.jpg","./workspaces_12.jpg":"imgs/workspaces/workspaces_12.jpg","./workspaces_13.jpg":"imgs/workspaces/workspaces_13.jpg","./workspaces_14.jpg":"imgs/workspaces/workspaces_14.jpg","./workspaces_15.jpg":"imgs/workspaces/workspaces_15.jpg"}],"imgs/funny/funny_01.jpg":[function(require,module,exports) {
+module.exports = "/funny_01.aa5a3e35.jpg";
+},{}],"imgs/funny/funny_02.jpg":[function(require,module,exports) {
+module.exports = "/funny_02.ed2d6cd3.jpg";
+},{}],"imgs/funny/funny_03.jpg":[function(require,module,exports) {
+module.exports = "/funny_03.b48236d2.jpg";
+},{}],"imgs/funny/funny_04.jpg":[function(require,module,exports) {
+module.exports = "/funny_04.d23a6ea5.jpg";
+},{}],"imgs/funny/funny_05.jpg":[function(require,module,exports) {
+module.exports = "/funny_05.3eb737ae.jpg";
+},{}],"imgs/funny/funny_06.jpg":[function(require,module,exports) {
+module.exports = "/funny_06.9bfbba96.jpg";
+},{}],"imgs/funny/funny_07.jpg":[function(require,module,exports) {
+module.exports = "/funny_07.24018f38.jpg";
+},{}],"imgs/funny/funny_08.jpg":[function(require,module,exports) {
+module.exports = "/funny_08.a59da5d9.jpg";
+},{}],"imgs/funny/funny_09.jpg":[function(require,module,exports) {
+module.exports = "/funny_09.079de5b1.jpg";
+},{}],"imgs/funny/funny_11.jpg":[function(require,module,exports) {
+module.exports = "/funny_11.a12f2bd1.jpg";
+},{}],"imgs/funny/funny_13.jpg":[function(require,module,exports) {
+module.exports = "/funny_13.b56ba1ef.jpg";
+},{}],"imgs/funny/funny_14.jpg":[function(require,module,exports) {
+module.exports = "/funny_14.b667af7d.jpg";
+},{}],"imgs/funny/funny_15.jpg":[function(require,module,exports) {
+module.exports = "/funny_15.01437b72.jpg";
+},{}],"imgs/funny/*.jpg":[function(require,module,exports) {
+module.exports = {
+  "funny_01": require("./funny_01.jpg"),
+  "funny_02": require("./funny_02.jpg"),
+  "funny_03": require("./funny_03.jpg"),
+  "funny_04": require("./funny_04.jpg"),
+  "funny_05": require("./funny_05.jpg"),
+  "funny_06": require("./funny_06.jpg"),
+  "funny_07": require("./funny_07.jpg"),
+  "funny_08": require("./funny_08.jpg"),
+  "funny_09": require("./funny_09.jpg"),
+  "funny_11": require("./funny_11.jpg"),
+  "funny_13": require("./funny_13.jpg"),
+  "funny_14": require("./funny_14.jpg"),
+  "funny_15": require("./funny_15.jpg")
+};
+},{"./funny_01.jpg":"imgs/funny/funny_01.jpg","./funny_02.jpg":"imgs/funny/funny_02.jpg","./funny_03.jpg":"imgs/funny/funny_03.jpg","./funny_04.jpg":"imgs/funny/funny_04.jpg","./funny_05.jpg":"imgs/funny/funny_05.jpg","./funny_06.jpg":"imgs/funny/funny_06.jpg","./funny_07.jpg":"imgs/funny/funny_07.jpg","./funny_08.jpg":"imgs/funny/funny_08.jpg","./funny_09.jpg":"imgs/funny/funny_09.jpg","./funny_11.jpg":"imgs/funny/funny_11.jpg","./funny_13.jpg":"imgs/funny/funny_13.jpg","./funny_14.jpg":"imgs/funny/funny_14.jpg","./funny_15.jpg":"imgs/funny/funny_15.jpg"}],"imgs/videos/4bDOetaLvZs_001.mp4":[function(require,module,exports) {
+module.exports = "/4bDOetaLvZs_001.a41aa550.mp4";
+},{}],"imgs/videos/IQdz0Pd-L2Y_004.mp4":[function(require,module,exports) {
+module.exports = "/IQdz0Pd-L2Y_004.848c0a7c.mp4";
+},{}],"imgs/videos/Nv0-x4K9YFI_004.mp4":[function(require,module,exports) {
+module.exports = "/Nv0-x4K9YFI_004.1a63db3c.mp4";
+},{}],"imgs/videos/OgPC4wnLJR0_001.mp4":[function(require,module,exports) {
+module.exports = "/OgPC4wnLJR0_001.38387151.mp4";
+},{}],"imgs/videos/lnawWqnGpMc_005.mp4":[function(require,module,exports) {
+module.exports = "/lnawWqnGpMc_005.31a8f1e8.mp4";
+},{}],"imgs/videos/*.mp4":[function(require,module,exports) {
+module.exports = {
+  "4bDOetaLvZs_001": require("./4bDOetaLvZs_001.mp4"),
+  "IQdz0Pd-L2Y_004": require("./IQdz0Pd-L2Y_004.mp4"),
+  "Nv0-x4K9YFI_004": require("./Nv0-x4K9YFI_004.mp4"),
+  "OgPC4wnLJR0_001": require("./OgPC4wnLJR0_001.mp4"),
+  "lnawWqnGpMc_005": require("./lnawWqnGpMc_005.mp4")
+};
+},{"./4bDOetaLvZs_001.mp4":"imgs/videos/4bDOetaLvZs_001.mp4","./IQdz0Pd-L2Y_004.mp4":"imgs/videos/IQdz0Pd-L2Y_004.mp4","./Nv0-x4K9YFI_004.mp4":"imgs/videos/Nv0-x4K9YFI_004.mp4","./OgPC4wnLJR0_001.mp4":"imgs/videos/OgPC4wnLJR0_001.mp4","./lnawWqnGpMc_005.mp4":"imgs/videos/lnawWqnGpMc_005.mp4"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var bodyPix = _interopRequireWildcard(require("@tensorflow-models/body-pix"));
@@ -27726,6 +28030,24 @@ var bodyPix = _interopRequireWildcard(require("@tensorflow-models/body-pix"));
 var _demo_util = require("./demo_util");
 
 var _sample = _interopRequireDefault(require("/imgs/sample.jpg"));
+
+var _video_test = _interopRequireDefault(require("/imgs/video_test.mp4"));
+
+var _black = _interopRequireDefault(require("/imgs/black.jpg"));
+
+var _ = _interopRequireDefault(require("./imgs/abstract/*.jpg"));
+
+var _2 = _interopRequireDefault(require("./imgs/interior/*.jpg"));
+
+var _3 = _interopRequireDefault(require("./imgs/nature/*.jpg"));
+
+var _4 = _interopRequireDefault(require("./imgs/publicspaces/*.jpg"));
+
+var _5 = _interopRequireDefault(require("./imgs/workspaces/*.jpg"));
+
+var _6 = _interopRequireDefault(require("./imgs/funny/*.jpg"));
+
+var _7 = _interopRequireDefault(require("./imgs/videos/*.mp4"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28027,8 +28349,7 @@ async function loadVideo() {
     } else {
       const videoElement = document.getElementById('video');
       state.video = videoElement;
-      console.log("test: " + videoElement.videoWidth + "," + videoElement.videoHeight);
-      state.video.play();
+      console.log("test: " + videoElement.videoWidth + "," + videoElement.videoHeight); //state.video.play();
     }
   } catch (e) {
     //let info = document.getElementById('info');
@@ -28183,8 +28504,123 @@ function downloadBG(blob) {
   a.click();
 }
 
+$.urlParam = function (name) {
+  var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+
+  if (results == null) {
+    return 0;
+  }
+
+  return results[1] || 0;
+};
+
 $(document).ready(function () {
-  navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia; // kick off the demo
+  var mode = $.urlParam('mode');
+  var vid = $.urlParam('vid'); //"Nv0-x4K9YFI_004" -lowE
+  //"OgPC4wnLJR0_001" = lowA
+  //"IQdz0Pd-L2Y_004" = lowC
+  //"lnawWqnGpMc_005" = highN
+  //4bDOetaLvZs_001 = lowO
+
+  if (mode == 'video') {
+    isWebcam = false;
+    currentBGSrc = _black.default;
+    /*
+    var videoElement = document.getElementById("video");
+    videoElement.src = videoPath1;
+    videoElement.muted = true;
+    videoElement.load();
+    videoElement.play();
+    */
+    //vid = "lnawWqnGpMc_005";
+
+    var videoElement = $("#video");
+    videoElement.attr('width', 640);
+    videoElement.attr('height', 360);
+    videoElement.attr('loop', true); //videoElement.attr('muted', true);
+    //videoElement.attr('src', videoPath1);
+
+    videoElement.attr('src', _7.default[vid]);
+    videoElement.get(0).load();
+    videoElement.on("loadeddata", function () {
+      videoElement.get(0).play();
+    });
+  } else {
+    isWebcam = true;
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+  } //add bg images
+  //testing
+
+
+  for (var key in _7.default) {
+    // check if the property/key is defined in the object itself, not in parent
+    if (_7.default.hasOwnProperty(key)) {
+      console.log(key, _7.default[key]);
+    }
+  }
+
+  var gallery = $('#gallery-list'); //var category_array = ["abstract", "interior", "nature", "publicspaces", "workspaces", "funny"];
+
+  for (var key in _.default) {
+    var category_str = 'abstract';
+
+    if (_.default.hasOwnProperty(key)) {
+      var imgsrc_str = _.default[key];
+      var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+      gallery.append(div_str);
+    }
+  }
+
+  for (var key in _2.default) {
+    var category_str = 'interior';
+
+    if (_2.default.hasOwnProperty(key)) {
+      var imgsrc_str = _2.default[key];
+      var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+      gallery.append(div_str);
+    }
+  }
+
+  for (var key in _3.default) {
+    var category_str = 'nature';
+
+    if (_3.default.hasOwnProperty(key)) {
+      var imgsrc_str = _3.default[key];
+      var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+      gallery.append(div_str);
+    }
+  }
+
+  for (var key in _4.default) {
+    var category_str = 'publicspaces';
+
+    if (_4.default.hasOwnProperty(key)) {
+      var imgsrc_str = _4.default[key];
+      var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+      gallery.append(div_str);
+    }
+  }
+
+  for (var key in _5.default) {
+    var category_str = 'workspaces';
+
+    if (_5.default.hasOwnProperty(key)) {
+      var imgsrc_str = _5.default[key];
+      var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+      gallery.append(div_str);
+    }
+  }
+
+  for (var key in _6.default) {
+    var category_str = 'funny';
+
+    if (_6.default.hasOwnProperty(key)) {
+      var imgsrc_str = _6.default[key];
+      var div_str = "<div class=\"gallery-product col-xl-2 col-lg-3 col-sm-4 filter " + category_str + "\"><a class=\"virtual-background\" >" + "<img src=\"" + imgsrc_str + "\" class=\"img-responsive\"/></a> </div>";
+      gallery.append(div_str);
+    }
+  } // kick off the demo
+
 
   bindPage(); //update the selected virtual background
 
@@ -28231,5 +28667,5 @@ $(document).ready(function () {
     currentCategory = $(this).text().toLowerCase();
   });
 });
-},{"@tensorflow-models/body-pix":"node_modules/@tensorflow-models/body-pix/dist/body-pix.esm.js","./demo_util":"demo_util.js","/imgs/sample.jpg":"imgs/sample.jpg"}]},{},["index.js"], null)
+},{"@tensorflow-models/body-pix":"node_modules/@tensorflow-models/body-pix/dist/body-pix.esm.js","./demo_util":"demo_util.js","/imgs/sample.jpg":"imgs/sample.jpg","/imgs/video_test.mp4":"imgs/video_test.mp4","/imgs/black.jpg":"imgs/black.jpg","./imgs/abstract/*.jpg":"imgs/abstract/*.jpg","./imgs/interior/*.jpg":"imgs/interior/*.jpg","./imgs/nature/*.jpg":"imgs/nature/*.jpg","./imgs/publicspaces/*.jpg":"imgs/publicspaces/*.jpg","./imgs/workspaces/*.jpg":"imgs/workspaces/*.jpg","./imgs/funny/*.jpg":"imgs/funny/*.jpg","./imgs/videos/*.mp4":"imgs/videos/*.mp4"}]},{},["index.js"], null)
 //# sourceMappingURL=/PrototypeV2.e31bb0bc.js.map
