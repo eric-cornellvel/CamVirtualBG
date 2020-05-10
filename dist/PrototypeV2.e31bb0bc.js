@@ -28522,19 +28522,11 @@ $(document).ready(function () {
   //"lnawWqnGpMc_005" = highN
   //4bDOetaLvZs_001 = lowO
 
+  var videoElement = $("#video");
+
   if (mode == 'video') {
     isWebcam = false;
     currentBGSrc = _black.default;
-    /*
-    var videoElement = document.getElementById("video");
-    videoElement.src = videoPath1;
-    videoElement.muted = true;
-    videoElement.load();
-    videoElement.play();
-    */
-    //vid = "lnawWqnGpMc_005";
-
-    var videoElement = $("#video");
     videoElement.attr('width', 640);
     videoElement.attr('height', 360);
     videoElement.attr('loop', true); //videoElement.attr('muted', true);
@@ -28542,9 +28534,6 @@ $(document).ready(function () {
 
     videoElement.attr('src', _7.default[vid]);
     videoElement.get(0).load();
-    videoElement.on("loadeddata", function () {
-      videoElement.get(0).play();
-    });
   } else {
     isWebcam = true;
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
@@ -28622,7 +28611,15 @@ $(document).ready(function () {
   } // kick off the demo
 
 
-  bindPage(); //update the selected virtual background
+  if (isWebcam) {
+    bindPage();
+  } else {
+    videoElement.on("loadeddata", function () {
+      videoElement.get(0).play();
+      bindPage();
+    });
+  } //update the selected virtual background
+
 
   $(".virtual-background").click(function () {
     //it will use the small resolution

@@ -448,28 +448,18 @@ $(document).ready(function () {
     //"IQdz0Pd-L2Y_004" = lowC
     //"lnawWqnGpMc_005" = highN
     //4bDOetaLvZs_001 = lowO
+    var videoElement = $("#video");
     if(mode == 'video'){
         isWebcam = false;
         currentBGSrc = blackBG;
-        /*
-        var videoElement = document.getElementById("video");
-        videoElement.src = videoPath1;
-        videoElement.muted = true;
-        videoElement.load();
-        videoElement.play();
-        */
-        //vid = "lnawWqnGpMc_005";
-        var videoElement = $("#video");
+
         videoElement.attr('width', 640);
         videoElement.attr('height', 360);     
         videoElement.attr('loop', true);
         //videoElement.attr('muted', true);
         //videoElement.attr('src', videoPath1);
         videoElement.attr('src', trait_videos[vid]);
-        videoElement.get(0).load();
-        videoElement.on("loadeddata", function() {
-            videoElement.get(0).play();
-        });     
+        videoElement.get(0).load();  
         
     }else{
         isWebcam = true;
@@ -552,7 +542,14 @@ $(document).ready(function () {
 
 
     // kick off the demo
-    bindPage();
+    if(isWebcam){
+        bindPage();
+    }else{
+        videoElement.on("loadeddata", function() {
+            videoElement.get(0).play();
+            bindPage();
+        });   
+    }
 
     //update the selected virtual background
     $(".virtual-background").click(function(){
